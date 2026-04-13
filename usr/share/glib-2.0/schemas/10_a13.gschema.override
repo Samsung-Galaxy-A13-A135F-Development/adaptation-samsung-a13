@@ -1,0 +1,8 @@
+[org.droidian.MobileSettings]
+touchpanel-double-tap-available = false
+
+[eu.medesimo.Libdroid]
+backlight-max-alternate = 4095
+
+[org.gnome.desktop.interface]
+cursor-size=1

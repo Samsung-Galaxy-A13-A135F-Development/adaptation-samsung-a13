@@ -1,0 +1,8 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_installsystemd:
+	dh_installsystemd -padaptation-samsung-a13-configs --name=a13-postboot a13-postboot.service --no-start
+	dh_installsystemduser -padaptation-samsung-a13-configs --name=a13-quirks a13-quirks.service

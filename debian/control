@@ -1,0 +1,42 @@
+Source: adaptation-samsung-a13
+Maintainer: SuperAviation001 <superaviation001@gmail.com>
+Section: metapackages
+Priority: optional
+Build-Depends: debhelper (>= 10),
+               debhelper-compat (= 13),
+Standards-Version: 4.5.0.3
+
+Package: adaptation-samsung-a13
+Architecture: arm64
+Depends: ${misc:Depends},
+         linux-bootimage-samsung-a13,
+         adaptation-hybris-api33-phone,
+         adaptation-samsung-a13-configs (= ${binary:Version}),
+	 adaptation-samsung-a13-android,
+         ofono-binder-plugin,
+         ofono-configs-binder-common,
+         lomiri-camera-app,
+         lomiri-gallery-app,
+         droidian-quirks-lomiri,
+         gstreamer1.0-tools,
+         mobile-power-saver,
+         fpd-unlock,
+         droidian-quirks-firefox-gpu,
+         phosh-osk-stub,
+         mobile-settings,
+         headphone-manager,
+         battery-input-manager
+Description: Community adaptation for samsung-a13 - metapackage
+
+Package: adaptation-samsung-a13-configs
+Architecture: arm64
+Depends: ${misc:Depends},
+Provides: getcutout, getoverlay, samsung-a13-settings, mobile-quirks, adishatz-apt-config, adishatz-apt-config-preview, adishatz-apt-config-test
+Replaces: getcutout, getoverlay, samsung-a13-settings, mobile-quirks, adishatz-apt-config, adishatz-apt-config-preview, adishatz-apt-config-test
+Conflicts: getcutout, getoverlay, samsung-a13-settings, mobile-quirks, adishatz-apt-config, adishatz-apt-config-preview, adishatz-apt-config-test
+Description: Community adaptation for samsung-a13 - adaptation configurations
+
+Package: adaptation-samsung-a13-android
+Architecture: all
+Depends: ${misc:Depends},
+Description: A13's specific adaptation for Android.

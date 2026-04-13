@@ -1,0 +1,12 @@
+{
+    "name": "Samsung Galaxy A13",
+    "x-res": 1080,
+    "y-res": 2408,
+    "border-radius": 96,
+    "cutouts": [
+        {
+            "name": "notch",
+            "path": "L 309,0 L 309,39 L 411,39 L 411,0 L 360,0"
+        }
+    ]
+}

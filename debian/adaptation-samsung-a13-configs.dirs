@@ -1,0 +1,12 @@
+/etc/environment.d
+/etc/ofono/binder.d
+/etc/phosh
+/etc/udev/rules.d
+/usr/bin
+/usr/share/glib-2.0/schemas
+/usr/lib/droid-vendor-overlay/overlay
+/usr/lib/droid-vendor-overlay/etc
+/usr/lib/systemd/system
+/usr/lib/systemd/user
+/var/lib/droidian/phosh-notch
+/var/lib/bluetooth

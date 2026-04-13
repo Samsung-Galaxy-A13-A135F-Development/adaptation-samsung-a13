@@ -1,0 +1,15 @@
+#!/bin/sh
+
+if [ -z "${LAUNCHED_BY_SYSTEMD}" ]; then
+    echo "This script is automatically executed at boot by systemd. Quiting.."
+    exit 1
+fi
+
+# Set pulseaudio default settings to prevent crackling (see /etc/security/limits.d/pulse.conf)
+sed -i '
+s/.*realtime-priority.*/realtime-priority = 5/g
+s/.*realtime-scheduling.*/realtime-scheduling = yes/g
+s/.*nice-level.*/;nice-level = -11/g
+s/.*high-priority.*/;high-priority = yes/g
+s/.*avoid-resampling.*/avoid-resampling = no/g
+' /etc/pulse/daemon.conf

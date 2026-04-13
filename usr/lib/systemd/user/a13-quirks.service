@@ -1,0 +1,8 @@
+[Unit]
+Description=a13 quirks
+
+[Service]
+ExecStart=/usr/bin/a13-quirks.sh
+
+[Install]
+WantedBy=default.target
