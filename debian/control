@@ -25,8 +25,7 @@ Depends: ${misc:Depends},
          phosh-osk-stub,
          mobile-settings,
          headphone-manager,
-         battery-input-manager,
-		 plasma-mobile-wf-config-hwcomposer
+         battery-input-manager
 Description: Community adaptation for samsung-a13 - metapackage
 
 Package: adaptation-samsung-a13-configs
