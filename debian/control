@@ -33,6 +33,7 @@ Architecture: arm64
 Depends: ${misc:Depends},
 Provides: getcutout, getoverlay, samsung-a13-settings, mobile-quirks, adishatz-apt-config, adishatz-apt-config-preview, adishatz-apt-config-test
 Replaces: getcutout, getoverlay, samsung-a13-settings, mobile-quirks, adishatz-apt-config, adishatz-apt-config-preview, adishatz-apt-config-test
+Conflicts: getcutout, getoverlay, samsung-a13-settings, mobile-quirks, adishatz-apt-config, adishatz-apt-config-preview, adishatz-apt-config-test
 Description: Community adaptation for samsung-a13 - adaptation configurations
 
 Package: adaptation-samsung-a13-android
