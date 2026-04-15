@@ -12,7 +12,7 @@ Depends: ${misc:Depends},
          linux-bootimage-samsung-a13,
          adaptation-hybris-api33-phone,
          adaptation-samsung-a13-configs (= ${binary:Version}),
-	 adaptation-samsung-a13-android,
+		 adaptation-samsung-a13-android,
          ofono-binder-plugin,
          ofono-configs-binder-common,
          lomiri-camera-app,
@@ -33,7 +33,6 @@ Architecture: arm64
 Depends: ${misc:Depends},
 Provides: getcutout, getoverlay, samsung-a13-settings, mobile-quirks, adishatz-apt-config, adishatz-apt-config-preview, adishatz-apt-config-test
 Replaces: getcutout, getoverlay, samsung-a13-settings, mobile-quirks, adishatz-apt-config, adishatz-apt-config-preview, adishatz-apt-config-test
-Conflicts: getcutout, getoverlay, samsung-a13-settings, mobile-quirks, adishatz-apt-config, adishatz-apt-config-preview, adishatz-apt-config-test
 Description: Community adaptation for samsung-a13 - adaptation configurations
 
 Package: adaptation-samsung-a13-android
